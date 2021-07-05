@@ -274,12 +274,196 @@ min-width: 100px;
 width: 300px;
 min-width: 300px;
 }
-.home__banner {
-	background: yellow;
+.home__content {
 	min-height: 100px;
 	width: calc(100% - 300px);
 	min-width: calc(100% - 300px);
 }
 .d-flex {
 	display: flex;
+<<<<<<< Updated upstream
 }
+=======
+}
+.slide-menu {
+	width: 300px;
+	height: 100vh;
+	background: #f00;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: none;
+	z-index: 10;
+	transform: translateX(-100%);
+	transition: 0.3s;
+}
+.slide-menu.opened {
+	box-shadow: 0px 0px 12px 0px #000;
+	transform: translateX(0%);
+	transition: 0.3s;
+}
+
+.home__content-slider .slick-slide {
+	height: 340px;
+}
+
+.home__content-slider .prev-button,
+.home__content-slider .next-button {
+	position:  absolute;
+	top: 50%;
+	width: 40px;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+	transform: translateY(-50%);
+	right: 0;
+	height: 100%;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+}
+.home__content-slider .prev-button svg,
+.home__content-slider .next-button svg {
+	fill:#467faa;
+	transition: 0.3s;
+
+}
+.home__content-slider .prev-button:hover svg,
+.home__content-slider .next-button:hover svg {
+	fill:#ff7878;
+	transition: 0.3s;
+
+}
+.home__content-slider .prev-button {
+	right: initial;
+	left: 0;
+	transform: translateY(-50%) scaleX(-1);
+
+}
+.home__product-list ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.menu__categories {
+	list-style: none;
+	cursor: pointer;
+	right: 0;
+}
+.menu__categories svg {
+	position: relative;
+	margin-right: 8px;
+	transform: translateY(25%);
+	width: 24px;
+	height: 24px;
+	fill: #adb8c8;
+}
+.menu__categories .title {
+	font-size: 14px;
+	text-decoration: none;
+	color: #3e77aa;
+	margin-bottom: 10px;
+	}
+.menu__categories .title:hover {
+	color: #f00;
+	text-decoration: underline;
+}
+.menu__categories-list ul {
+	padding-left: 24px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.menu__help {
+	list-style: none;
+	cursor: pointer;
+	height: 39px;
+	margin: 0;
+}
+.menu__help svg {
+	position: relative;
+	margin-right: 8px;
+	transform: translateY(25%);
+	width: 24px;
+	height: 24px;
+	fill: #adb8c8;
+}
+.menu__help .title {
+	font-size: 14px;
+	text-decoration: none;
+	color: #3e77aa;
+	margin-bottom: 10px;
+	}
+.menu__help .title:hover {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.menu__categories-welcome {
+	background: #f4f4f4;
+	text-align: center;
+	padding: 16px 24px;
+}
+.menu__categories-welcome .title {
+	margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.menu__categories-welcome .text {
+	margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 14px;
+    width: 252px;
+    text-align: center;
+}
+.menu__categories-welcome button {
+	margin-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    height: 32px;
+    background-color: #3e77aa;
+    color: #fff;
+    border-radius:4px;
+	cursor: pointer;
+	border: none;
+
+}
+.menu__categories-apps {
+	padding: 16px 24px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.menu__categories-apps .title {
+	margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #797878;
+    }
+.menu__categories-apps img {
+	height: 32px;
+}
+.menu__categories-socials .title {
+	margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #797878;
+}
+.menu__categories-socials img {
+	width: 32px;
+	height: 32px;
+}
+.home__content-video {
+	background: #4d4b4b;
+	
+}
+.video-card {
+	text-decoration: none;
+}
+>>>>>>> Stashed changes

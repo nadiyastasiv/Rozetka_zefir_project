@@ -1,0 +1,659 @@
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device=width, initial-scale=1.0">
+			<title> документ </title>
+
+			<!-- fonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+			<!-- stylesheets -->
+
+			<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+			<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+			<link rel="stylesheet" href="css/style.css"/>
+			<link rel="stylesheet" href="css/_product-card.css"/>
+		</head>
+		<body>
+			<div class="wrapper">
+				<header class="header">
+					<div class="container">
+						<div class="header__menu-toggle opened"> 
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="header__logo">
+							<a href="#" tittle="На головну">
+								<img src="img/logo.svg" alt= 'на головну'/>
+							</a>
+						</div>
+						<div class="header__catalog-toggle">
+							<button>
+								<img src="img/menu.svg" alt="">
+								<span>
+									Каталог
+								</span>
+							</button>
+						</div>
+						<!-- /header__catalog-toogle-->
+
+						<div class="header__search">
+							<form>
+								<div class="header__search-input">
+									<input type="text" placeholder
+									="Я шукаю"/>
+									<button class="header__search-mic">
+										<svg>
+											<use href="#search-mic"> </use>
+										</svg>
+									</button>
+								</div>
+								<button class="header__search-action"> Знайти </button>
+							</form>
+						</div>
+						<!-- header_search-->
+						<div class="header__languages">
+							<a href="#">
+								EN
+							</a>
+							<div>
+								<span class="separator">
+								</span>
+							</div>
+							<a href="#" class="active">
+								UA
+							</a>
+						</div>
+						<!-- header_languages-->
+						<div class="header__premium">
+							<a href="#">
+								<span>
+									Спробуйте
+								</span>
+								<span class="Premium">
+									Premium
+								</span>
+							</a>
+						</div>
+						<!-- header__premium-->
+
+						<div class="header__controls">
+							<a href="#" id="orders">
+								<img src="img/orders.svg" alt="Замовлення">
+								<span class="empty">0
+								</span>
+							</a>
+							<a href="#" id="libra">
+								<img src="img/libra.svg" alt="Порівняння">
+								<span>
+									3
+								</span>
+							</a>
+							<a href="#" id="heart">
+								<img src="img/heart.svg" alt="Улюблені">
+								<span>
+									3
+								</span>
+							</a>
+							<a href="#" id="basket">
+								<img src="img/basket.svg" alt="Кошик">
+								<span class="empty">0
+								</span>
+							</a>
+						</div>
+						<!-- header_controls-->
+					</div>
+
+				</header>
+				<main>
+					<div class="container d-flex">
+
+						<div class="home__catalog">
+							<div class="menu__categories-list">
+								<ul>
+									<li class="menu__categories">
+										<svg>
+											<use href="#laptop"></use>
+										</svg>
+										<!--  <svg src="img/laptop.svg" alt="Комп'ютери"> </svg> -->
+										<a href="#" class="title"> Ноутбуки та комп'ютери </a>
+									</li>
+									<li class="menu__categories">
+										<svg>
+											<use href="#smartphone"></use>
+										</svg>
+										<a href="#" class="title"> Смартфони, ТВ і електроніка	</a>
+									</li>
+									<li class="menu__categories">
+										<svg>
+											<use href="#gameconsole"></use>
+										</svg>
+										<a href="#" class="title"> Товари для геймерів </a>
+									</li>
+									<li class="menu__categories">
+										<svg>
+											<use href="#lavadora"></use>
+										</svg>
+										<a href="#" class="title"> Побутова техніка </a>
+									</li>
+								</li>
+								<li class="menu__categories">
+									<svg>
+										<use href="#armchair"></use>
+									</svg>
+									<a href="#" class="title"> Товари для дому </a>
+								</li>
+								<li class="menu__categories">
+									<svg>
+										<use href="#driller"></use>
+									</svg>
+									<a href="#" class="title"> Інструменти та автотовари </a>
+								</li>
+								<li class="menu__categories">
+									<svg>
+										<use href="#bath"></use>
+									</svg>
+									<a href="#" class="title"> Сантехніка та ремонт </a>
+								</li>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#farming"></use>
+								</svg>
+								<a href="#" class="title"> Дача, сад і город </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#tennis"></use>
+								</svg>
+								<a href="#" class="title"> Спорт і захоплення </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#tshirt"></use>
+								</svg>
+								<a href="#" class="title"> Одяг, взуття та прикраси	</a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#perfume"></use>
+								</svg>
+								<a href="#" class="title"> Краса та здоров'я </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#teddybear"></use>
+								</svg>
+								<a href="#" class="title"> Дитячі товари </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#paperclip"></use>
+								</svg>
+								<a href="#" class="title"> Канцтовари та книги </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#cocktail"></use>
+								</svg>
+								<a href="#" class="title"> Алкогольні напої та продукти </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#barecode"></use>
+								</svg>
+								<a href="#" class="title"> Товари для бізнесу </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#creditcard"></use>
+								</svg>
+								<a href="#" class="title"> Послуги та сервіси </a>
+							</li>
+							<li class="menu__categories">
+								<svg>
+									<use href="#tag"></use>
+								</svg>
+								<a href="#" class="title"> Гарячі знижки до 50% </a>
+							</li>
+
+						</ul>
+					</div>
+					<!-- catalog_end-->
+					<div class="menu__categories-help">
+						<ul>
+							<li class="menu__help">
+								<svg>
+									<use href="#question"></use>
+								</svg>
+								<a href="#" class="title"> Довідковий центр </a>
+							</li>
+						</ul>	
+					</div>
+					<!-- help_end-->
+					<br>
+					<br>
+					<div class="menu__categories-welcome">
+						<h3 class="title">
+							Ласкаво просимо!
+						</h3> 
+						<p class="text">
+							Увійдіть, щоб отримувати рекомендації, персональні бонуси і знижки.
+						</p>
+						<button class="login">
+							Увійдіть в особистий кабінет
+						</button>
+					</div>
+					<!-- welcome_end-->
+					<div class="menu__categories-apps">
+						<h4 class="title"> Встановлюйте наші додатки </h4>
+						<a  class="googleplay" href="#">
+							<img src="https://xl-static.rozetka.com.ua/assets/img/design/button-google-play-ua.svg" alt="">
+						</a>
+						<a class="appstore" href="#">
+							<img src="https://xl-static.rozetka.com.ua/assets/img/design/button-appstore-ua.svg" alt="">
+						</a>
+					</div>
+					<!-- apps_end-->
+					<div class="menu__categories-socials">
+						<h4 class="title"> Ми в соціальних мережах </h4>
+						<ul>
+							<li class="menu__socials">
+								<a class="facebook" href="#">
+									<img src="img/facebook.svg" alt= ''/>
+								</a>
+							</li>
+							<li class="menu__socials">
+								<a class="twitter" href="#">
+									<img src="img/twitter.svg" alt= ''/>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- socials_end-->
+				</div>
+				
+
+
+				<div class="home__content">
+					
+					<!-- slider_starts-->
+
+					<div class="home__content-slider">
+						<div> <img src="https://content2.rozetka.com.ua/banner_main/image_ua/original/186285549.jpg"> </div>
+						<div> <img	src="https://content.rozetka.com.ua/banner_main/image_ua/original/190082541.jpg"> </div>
+						<div> <img	src="https://content2.rozetka.com.ua/banner_main/image_ua/original/188877775.jpg"> </div>
+					</div>
+					<!-- slider_end-->
+					
+
+
+
+					<div class="home__product-list">
+						<h2 class="title">
+							Більше товарів для вибору
+						</h2>
+						<ul>
+							<li class="product-card home__product-list-card">
+								<div class="thumb">
+									<button class="add-to-favourites">
+										<svg>
+											<use href="#heart"></use>
+										</svg>
+									</button>
+									<a href="#">
+										<img src="https://content1.rozetka.com.ua/goods/images/preview/146463372.jpg" alt="">
+									</a>
+
+								</div>
+								<a href="#" class="title">
+									Органайзер для кабелів і дрібниць										
+								</a>
+								<div class="old-price">
+									149 ₴
+								</div>
+								<div class="price">
+									140 ₴
+								</div>
+								<div class="availability">
+									Немає в наявності
+								</div>
+							</li>
+
+							<li class="product-card home__product-list-card">
+								<div class="thumb">
+									<button class="add-to-favourites">
+										<svg>
+											<use href="#heart"></use>
+										</svg>
+									</button>
+									<a href="#">
+										<img src="https://content2.rozetka.com.ua/goods/images/preview/169051181.jpg" alt="">
+									</a>
+
+								</div>
+								<a href="#" class="title">
+									Xiaomi Mi Smart Band 6 Black										
+								</a>
+								<div class="old-price">
+									1400 ₴
+								</div>
+								<div class="price">
+									1299 ₴
+								</div>
+									<!-- <div class="availability">
+										Немає в наявності
+									</div> -->
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content2.rozetka.com.ua/goods/images/preview/184517074.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Концентрований кондиціонер для прання										
+									</a>
+									<div class="old-price">
+										215 ₴
+									</div>
+									<div class="price">
+										1139 ₴
+									</div>
+									<!-- <div class="availability">
+										Немає в наявності
+									</div> -->
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content1.rozetka.com.ua/goods/images/preview/29521079.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Флісовий спальний мішок-ковдра Fjord										
+									</a>
+									<div class="old-price">
+										
+									</div> 
+									<div class="price">
+										679 ₴
+									</div>
+									<div class="availability">
+										Закінчується
+									</div> 
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content1.rozetka.com.ua/goods/images/preview/10722396.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Набір коробів Handy Home 30x18.5x9.7 см										
+									</a>
+									<div class="old-price">
+										
+									</div> 
+									<div class="price">
+										179 ₴
+									</div>
+									<div class="availability">
+										
+									</div> 
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content1.rozetka.com.ua/goods/images/preview/176652280.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Планшет Apple iPad Pro 11" M1 Wi-Fi 128									
+									</a>
+									<div class="old-price">
+										30999 ₴
+									</div> 
+									<div class="price">
+										29499 ₴
+									</div>
+									<div class="availability">
+										Очікується
+									</div> 
+								</li>
+
+							</ul>
+
+						</div>
+
+
+						<div class="home__product-list">
+							<h2 class="title">
+								Схожі товари інших продавців
+							</h2>
+							<ul>
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content.rozetka.com.ua/goods/images/preview/13099411.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Чохол Hybrid Armored Case Apple Iphone X										
+									</a>
+									<div class="old-price">
+										155 ₴
+									</div>
+									<div class="price">
+										132 ₴
+									</div>
+									<!-- <div class="availability">
+										Немає в наявності
+									</div> -->
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content.rozetka.com.ua/goods/images/preview/13099574.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Захисне скло Chyi для Meizu M8c 5.45" Full										
+									</a>
+									<div class="old-price">
+										81 ₴
+									</div>
+									<div class="price">
+										60 ₴
+									</div>
+									<!-- <div class="availability">
+										Немає в наявності
+									</div> -->
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content.rozetka.com.ua/goods/images/preview/18053691.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Чохол Litchi для Honor 8S силікон бампер з										
+									</a>
+									<div class="old-price">
+										108 ₴
+									</div>
+									<div class="price">
+										84 ₴
+									</div>
+									<!-- <div class="availability">
+										Немає в наявності
+									</div> -->
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content2.rozetka.com.ua/goods/images/preview/18203128.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Кавомолка електрична плита з ножами 										
+									</a>
+									<div class="old-price">
+										650 ₴  
+									</div> 
+									<div class="price">
+										440 ₴
+									</div>
+									<!-- <div class="availability">
+										Закінчується
+									</div> -->
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content.rozetka.com.ua/goods/images/preview/19944984.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Шкіряна обкладинка для паспорта Villini 001										
+									</a>
+									<div class="old-price">
+										335 ₴
+									</div> 
+									<div class="price">
+										260 ₴
+									</div>
+									<div class="availability">
+										
+									</div> 
+								</li>
+
+								<li class="product-card home__product-list-card">
+									<div class="thumb">
+										<button class="add-to-favourites">
+											<svg>
+												<use href="#heart"></use>
+											</svg>
+										</button>
+										<a href="#">
+											<img src="https://content2.rozetka.com.ua/goods/images/preview/21903063.jpg" alt="">
+										</a>
+
+									</div>
+									<a href="#" class="title">
+										Захисне скло 21D Full Glue для Blackview A60 чорне 0,3 мм в упаковці									
+									</a>
+									<div class="old-price">
+										202 ₴
+									</div> 
+									<div class="price">
+										144 ₴
+									</div>
+									<div class="availability">
+										Очікується
+									</div> 
+								</li>
+
+							</ul>
+
+						</div>
+						<!-- product-list_end-->
+						<div class="home__content-video">
+							<ul >
+								<li class="video-card home__video-list-card">
+									<div class="video_youtube">
+										
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- video-list_end-->
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<!-- /Slide_menu-->
+		<div class="slide-menu">
+		</div>
+		<!-- /Slide_menu-->
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+
+		<!-- Slick slider-->
+
+		<script type="text/javascript" src="js/slick.min.js"></script>
+
+		<script src="js/app.js">
+
+		</script>
+	</div>
+
+
+</body>
+</html>
